@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Alexander Reyes - Creative Director</title>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+<style>
+body {
+margin: 0;
+		font-family: 'Roboto', sans-serif;
+		background-color: #111;
+color: #fff;
+	   text-align: center;
+}
+header {
+background: url('images/aboutme2.jpg') no-repeat center center;
+			background-size: cover;
+height: 100vh;
+display: flex;
+		 flex-direction: column;
+		 justify-content: center;
+		 align-items: center;
+}
+header h1 {
+		font-size: 3.5em;
+margin: 0;
+color: #000000;
+}
+header p {
+		font-size: 1.2em;
+margin: 20px 0 0;
+color: #000000;
+}
+nav {
+position: absolute;
+top: 20px;
+right: 20px;
+}
+
+nav a:link {
+color: #ffaaff;
+margin-left: 20px;
+text-decoration: none;
+font-weight: 700;
+}
+nav a:visited {
+color: #ff88ff;
+}
+a:focus {
+color: #d700ff;
+background-color: grey;
+}
+a:hover {
+color: #d700ff;
+background-color: grey;
+}
+a:active {
+color: #ff00dd;
+background-color: white;
+}
+section {
+padding: 60px 20px;
+}
+section h2 {
+font-size: 3em;
+margin-bottom: 20px;
+color: #FF007F;
+font-weight: bold;
+font-style: italic;
+}
+section h3 {
+font-size: 1.5em;
+margin-bottom: 20px;
+color: #FFA653;
+}
+section p {
+font-size: 1.2em;
+color: #CCAC00;
+}
+#hobbies {
+text-align: center; /* Center align the content */
+}
+
+#hobbies h2 {
+margin-bottom: 20px; /* Add spacing below the heading */
+}
+
+#hobbies > div {
+display: inline-block; /* Display grid items inline */
+border: 1px solid #ccc;
+margin: 0 10px; /* Add margin between grid items */
+padding: 5px;
+vertical-align: top; /* Align items to the top */
+width: calc(33.33% - 20px); /* Calculate width to fit three items per row with spacing */
+height: 85vh;
+box-sizing: border-box; /* Include padding and border in the width calculation */
+text-align: center; /* Align text to the left */
+}
+
+#hobbies div:first-child {
+margin-left: 0; /* Remove margin from the first grid item */
+}
+
+#hobbies div:last-child {
+margin-right: 0; /* Remove margin from the last grid item */
+}
+
+#hobbies img {
+width: 100%; /* Make images responsive */
+height: auto; /* Maintain aspect ratio */
+}
+strong {
+font-size: 1.25em;
+}
+
+footer {
+background-color: #222;
+padding: 20px;
+}
+footer p {
+margin: 0;
+}
+.transparent-background {
+background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+padding: 20px;
+color: pink;
+font-family: 'Great Vibes', cursive;
+}
+
+.social-links a {
+color: #fff;
+margin: 0 10px;
+}
+</style>
+</head>
+<body>
+<header>
+<h1 class='transparent-background'>Alexander Reyes</h1>
+<p class='transparent-background'>The One and Only Alexander Gomes Reyes</p>
+<nav>
+<a href="#about" class='transparent-background'>About me</a>
+<a href="#hobbies" class='transparent-background'>Hobbies</a>
+<a href="#japan" class='transparent-background'>Japan</a>
+</nav>
+</header>
+
+<section id="about">
+<h2>About me</h2>
+<p>I'm an American Citizen, but my ethnicity is Salvadoran. I'm 21 years old, I have 4 brothers and 1 sister.<br>
+I <strong>don't</strong> have a dad, he left to get milk and <strong>hasn't came back</strong>. Japan is the first overseas country I've traveled to.<br>
+My major is Computer Science, and I'm aiming for a Japanese minor.</p>
+</section>
+
+<section id="hobbies">
+<h2>Hobbies</h2>
+<div>
+<h3>Guitar</h3>
+<p>This is my Bestfriend's guitar that I borrowed while I'm in Japan, but she's moved away
+so I had to give it back :(</p> 
+<p><img src="images/guitar.png" width="400" height="auto" alt="A meme of someone (me) looking at a guitar and 
+and crying because he don't have it anymore"></p>
+</div>
+<div>
+<h3>Working out</h3>
+<p><img src="images/running_pic.jpg" width="400" height="auto" alt="A screenshot of me running 13km"></p>
+</div>
+<div>
+<h3>Minecraft</h3>
+<p><img src="images/minecraft.jpg" width="400" height="auto" alt="A screenshot of my modded minecraft"></p>
+</div>
+</section>
+
+<section id="japan">
+<h2>Japan</h2>
+<h3>My time in Japan so far</h3>
+<p></p>
+</section>
+
+<footer>
+<p>&copy; 2024 Alexander Reyes</p>
+<div class="social-links">
+<a href="https://www.youtube.com/@assykillamusic" target="_blank">My Music</a>
+</div>
+</footer>
+</body>
+</html>
+
