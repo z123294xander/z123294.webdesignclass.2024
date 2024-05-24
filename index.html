@@ -6,23 +6,23 @@
 <title>Alexander Reyes</title>
 <!-- font style -->
 <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"> 
-<title>Alexander Reyes</title>
 <style>
 body {
 	margin: 0;
-	font-family: 'Roboto', sans-serif;
-	background-color: #111;
-	color: #fff;
+	font-family: 'Roboto', sans-serif; /* Font change */
+	background-color: #111; /*black*/
+	color: #fff; /* Text color */
 	text-align: center;
 }
 header {
-background: url('images/aboutme2.jpg') no-repeat center center;
-			background-size: cover;
-height: 100vh;
-display: flex;
-		 flex-direction: column;
-		 justify-content: center;
-		 align-items: center;
+	background: url('images/aboutme.jpg') no-repeat center center;
+	background-size: cover;
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 }
 header h1 {
 		font-size: 3.5em;
@@ -81,16 +81,19 @@ font-size: 1.2em;
 color: #CCAC00;
 }
 #hobbies {
+background: linear-gradient(to right, #FFB6C1, #FF69B4, #FF1493); /* pink gradient color from left to right */
 text-align: center; /* Center align the content */
 }
 
 #hobbies h2 {
 margin-bottom: 20px; /* Add spacing below the heading */
+color: #111;
 }
 
 #hobbies  div {
+background-color: #111;
 display: inline-block; /* Display grid items inline */
-border: 1px solid #ccc;
+border: 1px solid #ccc; /* White border */
 margin: 0 10px; /* Add margin between grid items */
 padding: 5px;
 vertical-align: top; /* Align items to the top */
@@ -111,6 +114,24 @@ margin-right: 0; /* Remove margin from the last grid item */
 #hobbies img {
 width: 100%; /* Make images take up the most space */
 height: auto; /* Maintain aspect ratio */
+}
+#japan img {
+width: 30vh;
+height: auto;
+margin: 0 10px; /* Add margin between grid items */
+border: 2px solid #ff00ff; /* pink border */
+}
+#japan div{
+background: linear-gradient(to right, #FFB6C1, #FF69B4, #FF1493); /* pink gradient color from left to right */
+border: 3px solid #ccc; /* White border */
+display:flex;
+flex-wrap:wrap;
+flex-direction: row;
+justify-content: center;
+padding: 20px;
+width:fit-content;
+max-width:100%;
+flex: auto;
 }
 strong {
 font-size: 1.25em; /* Update bold font */
@@ -179,7 +200,14 @@ and I make mods on my phone. Minecraft is hands-down the best game in the univer
 <section id="japan">
 <h2>Japan</h2>
 <h3>My time in Japan so far</h3>
-<p></p>
+<div>
+<p><img src="images/drippybear.jpg" alt="A drippy bear posing in a cool pose"></p>
+<p><img src="images/alexontokyo.jpg" alt="A picture of me on top of the tokyo sign in odaiba"></p>
+<p><img src="images/newyears.jpg" alt="A group picture of the people i met in new years"></p>
+<p><img src="images/waterdiving.jpg" alt="A picture of my bestfriend and I scuba diving"></p>
+<p><img src="images/classicsapporo.jpg" alt="A picture classic sapporo beer"></p>
+<p><img src="images/enoshima.jpg" alt="The beautiful view of Enoshima island"></p>
+</div>
 </section>
 
 <footer>
