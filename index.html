@@ -93,16 +93,17 @@ color: #111;
 #hobbies div {
 background-color: #111;
 display: inline-block; /* Display grid items inline */
-flex-grow: 1;
 border: 1px solid #ccc; /* White border */
 margin: 0 10px; /* Add margin between grid items */
 padding: 5px;
 vertical-align: top; /* Align items to the top */
 width: calc(33.33% - 2em); /* Calculate width to fit three items per row with spacing */
+max-width:fit-content;
 height: 35em;
 box-sizing: border-box; 
 text-align: center; /* Align text to the left */
 justify-content: center;
+flex: auto;
 }
 
 #hobbies div:first-child {
