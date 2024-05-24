@@ -7,9 +7,6 @@
 <!-- font style -->
 <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"> 
 <style>
-html {
-display:flex;
-}
 body {
 	margin: 0;
 	font-family: 'Roboto', sans-serif; /* Font change */
@@ -96,13 +93,14 @@ color: #111;
 #hobbies div {
 background-color: #111;
 display: inline-block; /* Display grid items inline */
+flex-grow: 1;
 border: 1px solid #ccc; /* White border */
 margin: 0 10px; /* Add margin between grid items */
 padding: 5px;
 vertical-align: top; /* Align items to the top */
-width: calc(33.33% - 20px); /* Calculate width to fit three items per row with spacing */
+width: calc(33.33% - 2em); /* Calculate width to fit three items per row with spacing */
 height: 35em;
-box-sizing: border-box; /* Include padding and border in the width calculation */
+box-sizing: border-box; 
 text-align: center; /* Align text to the left */
 justify-content: center;
 }
