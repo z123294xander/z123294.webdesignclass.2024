@@ -101,13 +101,27 @@ border: 1px solid #ccc; /* White border */
 margin: 0 10px; /* Add margin between grid items */
 padding: 5px;
 vertical-align: top; /* Align items to the top */
-width: calc(33.33% - 2em); /* Calculate width to fit three items per row with spacing */
+width: calc(100% - 2.5em); /* Calculate width to fit three items per row with spacing */
 max-width:fit-content;
 height: 35em;
 box-sizing: border-box; 
 text-align: center; /* Align text to the left */
 justify-content: center;
 }
+@media (min-width: 600px) {
+#hobbies div {
+width: calc(50% - 20px); /* Two items per row for medium screens */
+}
+}
+
+@media (min-width: 900px) {
+#hobbies div {
+width: calc(33.33% - 20px); /* Three items per row for large screens */
+}
+}
+
+
+
 #hobbies div:first-child {
 margin-left: 0; /* Remove margin from the first grid item */
 }
