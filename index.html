@@ -117,10 +117,10 @@ justify-content: top;
 }
 @media (max-width: 600px) {
 #hobbies article {
-flex-direction: column;
+flex-direction: column; /*Make it into a column for phones */
 }
 #hobbies div {
-width: calc(50% - 20px); /* Two items per row for medium screens */
+width: calc(100% - 20px); 
 }
 }
 
@@ -130,15 +130,6 @@ width: calc(33.33% - 20px); /* Three items per row for large screens */
 }
 }
 
-
-
-#hobbies div:first-child {
-margin-left: 0; /* Remove margin from the first grid item */
-}
-
-#hobbies div:last-child {
-margin-right: 0; /* Remove margin from the last grid item */
-}
 
 #hobbies img {
 width: 100%; /* Make images take up the most space */
