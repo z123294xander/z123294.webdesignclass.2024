@@ -89,7 +89,11 @@ color: #CCAC00;
 background: linear-gradient(to right, #FFB6C1, #FF69B4, #FF1493); /* pink gradient color from left to right */
 text-align: center; /* Center align the content */
 }
-
+#hobbies article {
+display: flex; /* Display grid items inline */
+flex-direction:row;
+justify-content: space-between;
+}
 #hobbies h2 {
 margin-bottom: 20px; /* Add spacing below the heading */
 color: #111;
@@ -97,17 +101,19 @@ color: #111;
 
 #hobbies div {
 background-color: #111;
-display: inline-block; /* Display grid items inline */
+display: flex; /* Display grid items inline */
+flex-direction:column;
+flex: 1;
 border: 1px solid #ccc; /* White border */
 margin: 0 10px; /* Add margin between grid items */
 padding: 5px;
 vertical-align: top; /* Align items to the top */
 width: calc(100% - 2.5em); /* Calculate width to fit three items per row with spacing */
 max-width:fit-content;
-height: 35em;
+height: auto;
 box-sizing: border-box; 
 text-align: center; /* Align text to the left */
-justify-content: center;
+justify-content: top;
 }
 @media (min-width: 600px) {
 #hobbies div {
@@ -207,6 +213,7 @@ My major is Computer Science, and I'm aiming for a Japanese minor.</p>
 
 <section id="hobbies">
 <h2>Hobbies</h2>
+<article>
 <div>
 <h3>Guitar</h3>
 <p>This is my bestfriend's guitar that I borrowed while I'm in Japan, but she's moved away
@@ -225,6 +232,7 @@ and crying because he don't have it anymore"></p>
 and I make mods on my phone. Minecraft is hands-down the best game in the universe.</p> 
 <p><img src="images/minecraft.jpg" alt="A screenshot of my modded minecraft"></p>
 </div>
+<article>
 </section>
 
 <section id="japan">
